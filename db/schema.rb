@@ -11,11 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130716130106) do
+ActiveRecord::Schema.define(:version => 20130716202344) do
 
-  create_table "customers", :force => true do |t|
-    t.string   "email"
-    t.string   "password"
+  create_table "categories", :force => true do |t|
+    t.string   "italian"
+    t.string   "japanese"
+    t.string   "greek"
+    t.string   "american"
+    t.string   "canadian"
+    t.string   "chinese"
+    t.string   "vietnamese"
+    t.string   "polish"
+    t.string   "mexican"
+    t.string   "puruvian"
+    t.string   "french"
+    t.string   "korean"
+    t.string   "belgian"
+    t.string   "brazilian"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -47,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20130716130106) do
     t.string   "menu"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.integer  "owner_id"
   end
 
 end
