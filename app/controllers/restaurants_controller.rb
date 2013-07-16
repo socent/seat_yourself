@@ -8,11 +8,11 @@ class RestaurantsController < ApplicationController
   end
 
   def index
-    @restaurants = Restaurants.all
+    @restaurant = Restaurant.all
   end
 
   def show
-    @restaurant = Restaurants.find(params[:restaurant])
+    @restaurant = Restaurant.find(params[:restaurant])
   end
 
 end
