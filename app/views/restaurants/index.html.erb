@@ -6,13 +6,13 @@
 <hr>
 <br>
 <h2>Restaurant Directory</h2>
-<% Restaurant.all.each do |restaurant| %>
+<% @restaurants.each do |restaurant| %>
 	<p><strong>Name:</strong> <%= restaurant.name %></p>
 	<p><strong>Address:</strong> <%= restaurant.address %></p>
 	<p><strong>Neighborhood:</strong> <%= restaurant.neighborhood %></p>
 	<p><strong>Price Range:</strong> <%= restaurant.price_range %></p>
 	<p><strong>Summary:</strong> <%= restaurant.summary %></p>
-	<p><strong>Menu:</strong> <%= restaurant.menu %></p>
+	<a href="<%= restaurant.menu %>"><p><strong>Menu:</strong></p></a>
 <br>
 <hr>
 <br>
