@@ -1,4 +1,7 @@
 Seatyourself::Application.routes.draw do
+
+  resources :loyalty_points, only: [:new, :create, :edit, :update]
+  resources :users, only: [:new, :create, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
