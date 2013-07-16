@@ -1,7 +1,21 @@
 <h1>Toronto</h1>
-<br>
 <h2>Date</h2>	
 <h2>Time</h2>
 <h2>Party Size</h2>
-
+<br>
+<hr>
+<br>
 <h2>Restaurant Directory</h2>
+<% Restaurant.all.each do |restaurant| %>
+	<p><strong>Name:</strong> <%= restaurant.name %></p>
+	<p><strong>Address:</strong> <%= restaurant.address %></p>
+	<p><strong>Neighborhood:</strong> <%= restaurant.neighborhood %></p>
+	<p><strong>Price Range:</strong> <%= restaurant.price_range %></p>
+	<p><strong>Summary:</strong> <%= restaurant.summary %></p>
+	<p><strong>Menu:</strong> <%= restaurant.menu %></p>
+<br>
+<hr>
+<br>
+<% end %>
+
+
