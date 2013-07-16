@@ -8,7 +8,7 @@ class LoyaltyPointsController < ApplicationController
     @loyalty_point = LoyaltyPoints.new
 
     if @loyalty_point.save
-      redirect_to #landing page
+      redirect_to restaurants_url
     else
       render :new
     end
@@ -22,7 +22,7 @@ class LoyaltyPointsController < ApplicationController
     @loyalty_point = LoyaltyPoints.find(params[:id])
 
     if @loyalty_point.update_attributes(params[:loyalty_point])
-      redirect_to #landing page
+      redirect_to restaurants_url
     else
       render :edit
     end

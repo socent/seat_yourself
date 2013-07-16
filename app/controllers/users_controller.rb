@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new
 
     if @user.save
-      redirect_to # landing page
+      redirect_to restaurants_url
     else 
       render :new
     end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130716202344) do
+ActiveRecord::Schema.define(:version => 20130716211042) do
 
   create_table "categories", :force => true do |t|
     t.string   "italian"
@@ -28,38 +28,46 @@ ActiveRecord::Schema.define(:version => 20130716202344) do
     t.string   "korean"
     t.string   "belgian"
     t.string   "brazilian"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "restaurant_id"
   end
 
   create_table "loyalty_points", :force => true do |t|
-    t.integer  "customer_id"
     t.integer  "restaurant_id"
     t.integer  "total_points"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "user_id"
   end
 
   create_table "reservations", :force => true do |t|
-    t.integer  "customer_id"
     t.integer  "restaurant_id"
     t.integer  "party_size"
     t.integer  "time_slot"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "user_id"
   end
 
   create_table "restaurants", :force => true do |t|
-    t.string   "cuisine_category"
     t.string   "address"
     t.string   "neighborhood"
     t.string   "string"
     t.string   "price_range"
     t.text     "summary"
     t.string   "menu"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.integer  "owner_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "name"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
