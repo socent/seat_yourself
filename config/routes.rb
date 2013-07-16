@@ -1,7 +1,10 @@
 Seatyourself::Application.routes.draw do
 
+  root :to => 'restaurants#index'  
+
   resources :loyalty_points, only: [:new, :create, :edit, :update]
   resources :users, only: [:new, :create, :show]
+  resources :restaurants, only: [:index, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
