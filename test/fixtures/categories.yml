@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  italian: MyString
+  japanese: MyString
+  greek: MyString
+  american: MyString
+  canadian: MyString
+  chinese: MyString
+  vietnamese: MyString
+  polish: MyString
+  mexican: MyString
+  puruvian: MyString
+  french: MyString
+  korean: MyString
+  belgian: MyString
+  brazilian: MyString
+
+two:
+  italian: MyString
+  japanese: MyString
+  greek: MyString
+  american: MyString
+  canadian: MyString
+  chinese: MyString
+  vietnamese: MyString
+  polish: MyString
+  mexican: MyString
+  puruvian: MyString
+  french: MyString
+  korean: MyString
+  belgian: MyString
+  brazilian: MyString
