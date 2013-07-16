@@ -1,0 +1,2 @@
+class LoyaltyPointsController < ApplicationController
+end
