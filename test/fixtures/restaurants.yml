@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cuisine_category: MyString
+  address: MyString
+  neighborhood: MyString
+  string: MyString
+  price_range: MyString
+  summary: MyText
+  menu: MyString
+
+two:
+  cuisine_category: MyString
+  address: MyString
+  neighborhood: MyString
+  string: MyString
+  price_range: MyString
+  summary: MyText
+  menu: MyString
